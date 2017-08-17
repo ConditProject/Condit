@@ -17,7 +17,7 @@ Status SomeComputation(const double& result, int x, int y) {
     return InvalidStatus("Input is invalid");
   }
   result = x + y;
-  return Ok();
+  return OkStatus();
 }
 ```
 
@@ -26,7 +26,12 @@ The project is under the GNU General Public License (version 3). Please read
 LICENSE for more information. 
 
 ## Documentation
-TODO(samiurkh1n): Add documentation when available. 
+Check out the documentation [here](http://condit.readthedocs.io/en/latest/).
+Feel free to email me if you see something is off. 
 
 ## Installation and Testing
-TODO(samiurkh1n): Add installation and testing guide when available. 
+TODO(samiurkh1n): Add installation and testing guide when available.
+
+## Contact
+My email is samiurkh1n@gmail.com. Email me if you would like to contribute
+or if you see something off with the documentation, code, anything...

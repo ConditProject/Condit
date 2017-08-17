@@ -10,7 +10,7 @@ public:
 
   operator bool() const { return state_ == State::OK; }
 private:
-  State state_;
+  State state_; 
 };
 
 #endif  // STATUS_H

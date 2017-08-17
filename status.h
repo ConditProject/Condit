@@ -15,20 +15,21 @@ public:
   // Default constructor creates an object with an Ok state
   Status();
 
-  Status(const State& state); 
+  Status(const enum State& state, std::string message); 
   Status(const Status& other_status);
   Status& operator=(const Status& status) = default;
   ~Status() = default;
   
-  // Method that returns a Status object with an Ok state
+  // Method that returns states
   static Status OkStatus();
+  static Status InvalidError(std::string message);
 
-  // Methods that returns a Status object with an Invalid state
-  static Status InvalidError();
-  
+  State State() const;
+  std::string Message() const;
   operator bool() const { return state_ == OK; }
 private:
-  State state_;
+  enum State state_;
+  std::string message_;
 };
 
 #endif  // STATUS_H

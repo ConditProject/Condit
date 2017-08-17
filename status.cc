@@ -4,8 +4,9 @@ Status::Status() {
   state_ = OK;
 }
 
-Status::Status(const State& state) {
+Status::Status(const enum State& state, std::string message) {
   state_ = state;
+  message_ = message;
 }
 
 Status::Status(const Status& other_status) {
@@ -13,9 +14,13 @@ Status::Status(const Status& other_status) {
 }
 
 Status Status::OkStatus() {
-  return Status(OK); 
+  return Status(OK, ""); 
 }
 
-Status Status::InvalidError() {
-  return Status(INVALID); 
+Status Status::InvalidError(std::string message) {
+  return Status(INVALID, message); 
 }
+
+enum State Status::State() const { return state_; }
+
+std::string Status::Message() const { return message_; }

@@ -4,7 +4,7 @@
 cc_library(
   name = "status",
   srcs = ["status.cc"],
-  hdrs = ["status.h", "state.h"],
+  hdrs = ["status.h",]
 )
 
 cc_test(

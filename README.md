@@ -5,7 +5,7 @@
 
 [![Build Status](https://travis-ci.org/samiurkh1n/Condit.svg?branch=master)](https://travis-ci.org/samiurkh1n/Condit)
 
-A status tracking library for C++ binaries.
+A status tracking library for C++ binaries. The library was inspired by the Status library found in the core library of Google's Tensorflow and gRPC and protocol buffer repos. 
 
 ## Purpose
 Condit is a C++ status tracking type. Libraries and software developers often

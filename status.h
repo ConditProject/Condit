@@ -9,6 +9,9 @@
 //  is more readable. The status object is an alternative to using integers
 //  or bools for tracking the state of a program.
 //
+// The library was inspired by the Status library found in the core library
+// of Google's Tensorflow and gRPC and protocol buffer repos. 
+//
 // Use cases:
 // 
 // (_) Status can be the return type of a program -
@@ -30,10 +33,16 @@
 #include <string>
 
 // Enum to hold possible states
-// TODO(samiurkh1n): Include more states when available
 enum State {
-  OK = 0,
-  INVALID = 1,
+  OK = 0,  
+  CANCELLED = 1,  
+  INVALID = 2,  
+  NOT_FOUND = 3, 
+  ALREADY_EXISTS = 4, 
+  OUT_OF_RANGE = 5,  
+  FAILED_PRECONDITION = 6, 
+  UNIMPLEMENTED = 7, 
+  UNKNOWN = 8  
 };
 
 class Status {
@@ -48,8 +57,16 @@ public:
   
   // Method that returns states
   static Status OkStatus();
+  static Status CancelledError(std::string message);
   static Status InvalidError(std::string message);
+  static Status NotFoundError(std::string message);
+  static Status AlreadyExistsError(std::string message);
+  static Status OutOfRangeError(std::string message);
+  static Status FailedPreconditionError(std::string message);
+  static Status UnimplementedError(std::string message);
+  static Status UnknownError(std::string message);
 
+  // Getters
   enum State State() const { return state_; }
   std::string Message() const { return message_; }
   

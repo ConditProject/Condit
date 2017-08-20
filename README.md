@@ -1,5 +1,7 @@
 # Condit
-![Condit Logo](https://drive.google.com/file/d/0B8iaiAkj3epVVE0wZjlxQzlyWTA/view?usp=sharing)
+<div align="center">
+  <img src="https://drive.google.com/file/d/0B8iaiAkj3epVVE0wZjlxQzlyWTA/view?usp=sharing">
+</div>
 [![Build Status](https://travis-ci.org/samiurkh1n/Condit.svg?branch=master)](https://travis-ci.org/samiurkh1n/Condit)
 
 A status tracking library for C++ binaries.

@@ -1,6 +1,6 @@
 # Condit
 <div align="center">
-<img src = https://raw.githubusercontent.com/samiurkh1n/Condit/master/docs/logo.png>
+<img src = https://raw.githubusercontent.com/samiurkh1n/Condit/master/resources/logo.png>
 </div>
 
 [![Build Status](https://travis-ci.org/samiurkh1n/Condit.svg?branch=master)](https://travis-ci.org/samiurkh1n/Condit)

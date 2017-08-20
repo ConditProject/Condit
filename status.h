@@ -51,7 +51,7 @@ public:
   Status();
 
   Status(const enum State& state, std::string message); 
-  Status(const Status& other_status);
+  Status(const Status& other_status) = default;
   Status& operator=(const Status& status) = default;
   ~Status() = default;
   

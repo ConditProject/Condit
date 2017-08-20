@@ -5,7 +5,30 @@ namespace {
 
   TEST(StatusTest, ConstructDefaultStatusObject) {
     Status state;
-    ASSERT_TRUE(state);
+    ASSERT_EQ(state.State(), OK);
+  }
+
+  TEST(StatusTest, ConstructStatusFromStateAndMessage) {
+    Status unimplemented_state(UNIMPLEMENTED, "Not implemented");
+    ASSERT_EQ(unimplemented_state.State(), UNIMPLEMENTED);
+    ASSERT_EQ(unimplemented_state.Message(), "Not implemented");
+  }
+
+  TEST(StatusTest, ConstructStatusFromAnotherStatus) {
+    Status unimplemented_state(UNIMPLEMENTED, "Not implemented");
+    Status other_state(unimplemented_state);
+    ASSERT_EQ(other_state.State(), UNIMPLEMENTED);
+    ASSERT_EQ(other_state.Message(), "Not implemented");
+  }
+
+  TEST(StatusTest, OkStatusCastsToTrue) {
+    Status ok_state;
+    ASSERT_TRUE(ok_state);
+  }
+
+  TEST(StatusTest, NonOkStatusCastsToFalse) {
+    Status non_ok_state(CANCELLED, "Not ok status");
+    ASSERT_FALSE(non_ok_state);
   }
 
   TEST(StatusTest, ConstructAnOkStatusObject) {

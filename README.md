@@ -1,7 +1,8 @@
 # Condit
 <div align="center">
-  <img src="https://drive.google.com/file/d/0B8iaiAkj3epVVE0wZjlxQzlyWTA/view?usp=sharing">
+<img src = https://raw.githubusercontent.com/samiurkh1n/Condit/master/docs/logo.png>
 </div>
+
 [![Build Status](https://travis-ci.org/samiurkh1n/Condit.svg?branch=master)](https://travis-ci.org/samiurkh1n/Condit)
 
 A status tracking library for C++ binaries.
@@ -27,14 +28,13 @@ Status SomeComputation(const double& result, int x, int y) {
 ```
 
 ## License
-The project is under the Apache License. Please read
-[LICENSE](https://github.com/samiurkh1n/Condit/blob/master/LICENSE) for more information. 
+The project is under the Apache License. Please read [LICENSE](LICENSE) for more information. 
 
 ## Documentation
 Check out the documentation [here](http://condit.readthedocs.io/en/latest/).
 
 ## Contributing
-Check [CONTRIBUTING.md](https://github.com/samiurkh1n/Condit/blob/master/CONTRIBUTING.md) for more information about contributing.
+Check [CONTRIBUTING.md](CONTRIBUTING.md) for more information about contributing.
 
 ## Contact
 My email is samiurkh1n@gmail.com. Email me if you would like to contribute

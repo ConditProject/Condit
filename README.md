@@ -5,6 +5,8 @@
 
 [![Build Status](https://travis-ci.org/samiurkh1n/Condit.svg?branch=master)](https://travis-ci.org/samiurkh1n/Condit)
 
+[![Coverage Status](https://coveralls.io/repos/github/samiurkh1n/Condit/badge.svg?branch=master)](https://coveralls.io/github/samiurkh1n/Condit?branch=master)
+
 A status tracking library for C++ binaries. The library was inspired by the Status library found in the core library of Google's Tensorflow and gRPC and protocol buffer repos. 
 
 ## Purpose

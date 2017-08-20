@@ -30,4 +30,5 @@ script:
   - bazel test :status_test 
 
 after_success:
+  - bazel coverage
   - coveralls --gcov-options '\-lp'

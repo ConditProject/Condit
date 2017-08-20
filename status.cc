@@ -20,7 +20,3 @@ Status Status::OkStatus() {
 Status Status::InvalidError(std::string message) {
   return Status(INVALID, message); 
 }
-
-enum State Status::State() const { return state_; }
-
-std::string Status::Message() const { return message_; }

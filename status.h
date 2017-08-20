@@ -24,8 +24,8 @@ public:
   static Status OkStatus();
   static Status InvalidError(std::string message);
 
-  State State() const;
-  std::string Message() const;
+  enum State State() const { return state_; }
+  std::string Message() const { return message_; }
   operator bool() const { return state_ == OK; }
 private:
   enum State state_;

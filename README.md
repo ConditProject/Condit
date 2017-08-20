@@ -31,7 +31,7 @@ Status SomeComputation(const double& result, int x, int y) {
 The project is under the Apache License. Please read [LICENSE](LICENSE) for more information. 
 
 ## Documentation
-Check out the documentation [here](http://condit.readthedocs.io/en/latest/).
+Check out the documentation in the [header](status.h) file.
 
 ## Contributing
 Check [CONTRIBUTING.md](CONTRIBUTING.md) for more information about contributing.

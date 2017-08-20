@@ -9,7 +9,7 @@ return different integers (-1, 0, 1) to track the status of a binary. However,
 that doesn't provide any useful information to a developer trying to debug a
 broken binary.
 
-## Design Doc and Choices
+## Design Doc and Decisions
 Here is the [design doc](https://goo.gl/LGaKtz). Any suggestions welcome!
 
 ## Example

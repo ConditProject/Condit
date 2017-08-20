@@ -1,6 +1,6 @@
 # Condit Contributors Guide
 
-Thanks for being interested in contributing to Condit.
+Thanks for being interested in contributing to Condit. If you would like to contribute please email samiurkh1n@gmail.com first. 
 
 ## Setting Up
 The project uses [bazel](https://docs.bazel.build/versions/master/install.html) and

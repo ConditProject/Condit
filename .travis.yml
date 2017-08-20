@@ -4,7 +4,13 @@ dist: trusty
 
 before_install:
   - sudo apt-get update -qq
+  - sudo add-apt-repository ppa:webupd8team/java
+  - sudo apt-get update && sudo apt-get install oracle-java8-installer
+  - echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+  - curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
+  - sudo apt-get update -qq
   - sudo apt-get install -qq -y bazel libgtest-dev
+  - sudo apt-get upgrade -qq bazel 
   - sudo wget https://github.com/google/googletest/archive/release-1.7.0.tar.gz
   - sudo tar xf release-1.7.0.tar.gz
   - cd googletest-release-1.7.0

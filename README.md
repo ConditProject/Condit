@@ -1,4 +1,5 @@
 # Condit
+![Condit Logo](https://drive.google.com/file/d/0B8iaiAkj3epVVE0wZjlxQzlyWTA/view?usp=sharing)
 [![Build Status](https://travis-ci.org/samiurkh1n/Condit.svg?branch=master)](https://travis-ci.org/samiurkh1n/Condit)
 
 A status tracking library for C++ binaries.
@@ -24,12 +25,11 @@ Status SomeComputation(const double& result, int x, int y) {
 ```
 
 ## License
-The project is under the GNU General Public License (version 3). Please read
+The project is under the Apache License. Please read
 [LICENSE](https://github.com/samiurkh1n/Condit/blob/master/LICENSE) for more information. 
 
 ## Documentation
 Check out the documentation [here](http://condit.readthedocs.io/en/latest/).
-Feel free to email me if you see something is off. 
 
 ## Contributing
 Check [CONTRIBUTING.md](https://github.com/samiurkh1n/Condit/blob/master/CONTRIBUTING.md) for more information about contributing.

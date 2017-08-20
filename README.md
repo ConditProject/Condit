@@ -1,4 +1,6 @@
 # Condit
+[![Build Status](https://travis-ci.org/samiurkh1n/Condit.svg?branch=master)](https://travis-ci.org/samiurkh1n/Condit)
+
 A status tracking library for C++ binaries.
 
 ## Purpose

@@ -25,14 +25,14 @@ Status SomeComputation(const double& result, int x, int y) {
 
 ## License
 The project is under the GNU General Public License (version 3). Please read
-LICENSE for more information. 
+[LICENSE](https://github.com/samiurkh1n/Condit/blob/master/LICENSE) for more information. 
 
 ## Documentation
 Check out the documentation [here](http://condit.readthedocs.io/en/latest/).
 Feel free to email me if you see something is off. 
 
-## Installation and Testing
-TODO(samiurkh1n): Add installation and testing guide when available.
+## Contributing
+Check [CONTRIBUTING.md](https://github.com/samiurkh1n/Condit/blob/master/CONTRIBUTING.md) for more information about contributing.
 
 ## Contact
 My email is samiurkh1n@gmail.com. Email me if you would like to contribute

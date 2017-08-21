@@ -5,13 +5,13 @@
 
 [![Build Status](https://travis-ci.org/samiurkh1n/Condit.svg?branch=master)](https://travis-ci.org/samiurkh1n/Condit)
 
-A status tracking library for C++ binaries. The library was inspired by the Status library found in the core library of Google's Tensorflow and gRPC and protocol buffer repos. 
+A status tracking object. The library was inspired by the Status library found in the core library of Google's Tensorflow and gRPC and protocol buffer repos. 
 
 ## Purpose
-Condit is a C++ status tracking type. Libraries and software developers often
+Condit is a status tracking type. Libraries and software developers often
 return different integers (-1, 0, 1) to track the status of a binary. However,
 that doesn't provide any useful information to a developer trying to debug a
-broken binary.
+broken binary. The Status object packages two pieces of information: a program state and a description of that state. 
 
 ## Design Doc and Decisions
 Here is the [design doc](https://goo.gl/LGaKtz). Any suggestions welcome!

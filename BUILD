@@ -3,13 +3,13 @@
 
 cc_library(
   name = "status",
-  srcs = ["status.cc"],
-  hdrs = ["status.h",]
+  srcs = ["src/status.cc"],
+  hdrs = ["src/status.h",]
 )
 
 cc_test(
   name = "status_test",
-  srcs = ["status_test.cc"],
+  srcs = ["src/status_test.cc"],
   deps = [
     "@gtest_repo//:gtest",
     ":status",

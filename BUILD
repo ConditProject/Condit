@@ -11,7 +11,7 @@ cc_test(
   name = "status_test",
   srcs = ["src/status_test.cc"],
   deps = [
-    "@gtest_repo//:gtest",
+    "@com_google_googletest//:gtest",
     ":status",
   ],
 )

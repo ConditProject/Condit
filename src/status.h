@@ -69,6 +69,7 @@ public:
   // Getters
   enum State State() const { return state_; }
   std::string Message() const { return message_; }
+  bool IsOk() const { return state_ == OK; }
   
   operator bool() const { return state_ == OK; }
 private:

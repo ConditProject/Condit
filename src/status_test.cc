@@ -37,6 +37,18 @@ namespace {
     ASSERT_EQ(ok_state.State(), OK);
   }
 
+  TEST(StatusTest, IsOkMethodReturnsTrueWithOkStatus) {
+    Status ok_state = Status::OkStatus();
+    ASSERT_TRUE(ok_state.IsOk());
+    ASSERT_EQ(ok_state.State(), OK);
+  }
+
+  TEST(StatusTest, IsOkMethodReturnsFalseWithNonOkStatus) {
+    Status nonok_state = Status::CancelledError("Cancelled");
+    ASSERT_FALSE(nonok_state.IsOk());
+    ASSERT_EQ(nonok_state.State(), CANCELLED);
+  }
+
   TEST(StatusTest, ConstructAnInvalidStatusObject) {
     Status invalid_state =
       Status::InvalidError("This caused an invalid error");

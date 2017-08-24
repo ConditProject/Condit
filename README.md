@@ -1,4 +1,6 @@
 # Condit
+
+[![Join the chat at https://gitter.im/condit-status-tracker/Lobby](https://badges.gitter.im/condit-status-tracker/Lobby.svg)](https://gitter.im/condit-status-tracker/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 <div align="center">
 <img src = https://raw.githubusercontent.com/samiurkh1n/Condit/master/resources/logo.png>
 </div>

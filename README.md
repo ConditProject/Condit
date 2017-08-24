@@ -1,11 +1,12 @@
 # Condit
 
-[![Join the chat at https://gitter.im/condit-status-tracker/Lobby](https://badges.gitter.im/condit-status-tracker/Lobby.svg)](https://gitter.im/condit-status-tracker/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-<div align="center">
+div align="center">
 <img src = https://raw.githubusercontent.com/samiurkh1n/Condit/master/resources/logo.png>
 </div>
 
 [![Build Status](https://travis-ci.org/samiurkh1n/Condit.svg?branch=master)](https://travis-ci.org/samiurkh1n/Condit)
+
+[![Join the chat at https://gitter.im/condit-status-tracker/Lobby](https://badges.gitter.im/condit-status-tracker/Lobby.svg)](https://gitter.im/condit-status-tracker/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A status tracking object. The library was inspired by the Status library found in the core library of Google's Tensorflow and gRPC and protocol buffer repos. 
 

@@ -1,6 +1,6 @@
 # Condit
 
-div align="center">
+<div align="center">
 <img src = https://raw.githubusercontent.com/samiurkh1n/Condit/master/resources/logo.png>
 </div>
 

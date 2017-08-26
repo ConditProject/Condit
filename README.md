@@ -8,6 +8,8 @@
 
 [![Join the chat at https://gitter.im/condit-status-tracker/Lobby](https://badges.gitter.im/condit-status-tracker/Lobby.svg)](https://gitter.im/condit-status-tracker/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 A status tracking object. The library was inspired by the Status library found in the core library of Google's Tensorflow and gRPC and protocol buffer repos. 
 
 ## Purpose

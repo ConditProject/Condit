@@ -13,7 +13,7 @@
 // of Google's Tensorflow and gRPC and protocol buffer repos. 
 //
 // Use cases:
-// 
+//
 // (_) Status can be the return type of a program -
 // Status SomeComputation(...) {
 //   do_some_computing()
@@ -54,7 +54,7 @@ public:
   Status(const Status& other_status) = default;
   Status& operator=(const Status& status) = default;
   ~Status() = default;
-  
+
   // Method that returns states
   static Status OkStatus();
   static Status CancelledError(std::string message);
@@ -70,7 +70,7 @@ public:
   enum State State() const { return state_; }
   std::string Message() const { return message_; }
   bool IsOk() const { return state_ == OK; }
-  
+
   operator bool() const { return state_ == OK; }
 private:
   enum State state_;

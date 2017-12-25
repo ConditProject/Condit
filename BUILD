@@ -1,6 +1,8 @@
 ## Description:
 ## Condit is a status-tracking type for C++ binaries.
 
+package(default_visibility = ["//visibility:public"])
+
 cc_library(
   name = "status",
   srcs = ["src/status.cc"],

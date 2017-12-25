@@ -3,6 +3,9 @@ language: cpp
 dist: trusty
 
 before_install:
+  # Install Cmake
+  - sudo apt-get install cmake
+
   # Install bazel
   - sudo apt-get update -qq
   - sudo add-apt-repository -y ppa:webupd8team/java

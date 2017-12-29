@@ -1,7 +1,5 @@
 language: cpp
 
-dist: trusty
-
 before_install:
   # Install Cmake
   - sudo apt-get install cmake

@@ -28,6 +28,16 @@ Status SomeComputation(const double& result, int x, int y) {
 }
 ```
 
+## Build and Test Instructions
+```bash
+$ git clone https://github.com/samiurkh1n/Condit
+$ mkdir build
+$ cd build
+$ cmake ..
+# if you want to run tests
+$ ./tests/status_test
+```
+
 ## License
 The project is under the Apache License. Please read [LICENSE](LICENSE) for more information. 
 

@@ -1,5 +1,6 @@
-#include "gtest/gtest.h"
-#include "status.h"
+#include "../includes/status.h"
+
+#include "../third_party/googletest/googletest/include/gtest/gtest.h"
 
 namespace {
 

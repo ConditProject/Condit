@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.3)
+
+enable_testing()
+
+add_executable(status_test status_test.cc)
+
+target_link_libraries(status_test PUBLIC
+        gtest_main
+        libstatus
+)
+
+add_test(
+        NAME status_test
+        COMMAND status_test
+)

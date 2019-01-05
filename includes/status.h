@@ -55,7 +55,7 @@ public:
   Status& operator=(const Status& status) = default;
   ~Status() = default;
 
-  // Method that returns states
+  // Method that returns states - you can call these from anywhere.
   static Status OkStatus();
   static Status CancelledError(std::string message);
   static Status InvalidError(std::string message);

@@ -4,7 +4,7 @@
 // function can return StatusOr<T>. You can use the status value to determine
 // where your program should continue.
 //
-// Example use case:
+// Use case:
 //   StatusOr<Server*> ConstructServer(int port_number) {
 //     Do some stuff
 //     if (!internal_status.ok()) { return internal_status; }
@@ -21,10 +21,9 @@
 //
 // Or you can use the ASSIGN_OR_RETURN macro
 // Example:
-//   (assuming ConstructServer(int) exists...
+//   (assuming ConstructServer(int) exists as above...
 //   ASSIGN_OR_RETURN(Server* s, ConstructServer(0));
-
-// TODO document expected arg types and when status or will explcitly crash
+//
 
 #ifndef _STATUS_OR_H_
 #define _STATUS_OR_H_
@@ -33,7 +32,9 @@
 
 template <class T>
 class StatusOr {
-public:  
+public:
+  // A StatusOr must always be initialized with either a value or a status
+  // If you initialize a StatusOr with a value, it'll mark the status as Ok.
   StatusOr() = delete;
   StatusOr(const T& value);
   StatusOr(const Status& status);
@@ -41,6 +42,9 @@ public:
   StatusOr(const StatusOr<T>& other);
   StatusOr& operator=(const StatusOr<T>& other);
 
+  // Warning: If the status of your computation was not Ok() a call to GetValue
+  // will crash your program. Make sure to check the status before using a
+  // value
   T GetValue();
   Status GetStatus();
   bool IsOk();
@@ -53,7 +57,7 @@ private:
   if (!statusor.IsOk()) { return statusor.GetStatus(); }	\
     lvalue = statusor.GetValue();
 
-// Implementation
+// Implementation below (because this is a templated class)
 
 template <class T>
 StatusOr<T>::StatusOr(const T& value) {

@@ -6,11 +6,21 @@ project(${ProjectName} CXX)
 set(CMAKE_CXX_STANDARD 14)  # allows for variable templates
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
+set(CompilerFlags
+        CMAKE_CXX_FLAGS
+        CMAKE_CXX_FLAGS_DEBUG
+        CMAKE_CXX_FLAGS_RELEASE
+)
+
+if (MSVC)
+  foreach(CompilerFlag ${CompilerFlags})
+    set(${CompilerFlag} "/MTd")
+  endforeach()
+endif()
+
 add_subdirectory(third_party)  # Third party libraries/dependencies
 
-# Static libraries because they are not that large
-add_library(libstatus STATIC src/status.cc)  # Status
-# TODO(samiurkh1n): StatusOr library
+add_library(libstatus STATIC src/status.cc)
 
 add_subdirectory(tests)
 
